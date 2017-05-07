@@ -42,7 +42,7 @@ public class CustomerController {
 			System.out.println("Customer id: " + cust.getCid() + " Customer Name: " + cust.getName() + " Role: "
 					+ cust.getRole() + " Account Type: " + cust.getAccount().toString());
 		}
-		return "Customer registered!!!";
+		return "Customer registered!!!!";
 
 	}
 
