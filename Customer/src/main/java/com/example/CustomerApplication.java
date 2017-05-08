@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-import com.example.controller.CustomerController;
+//import com.example.controller.CustomerController;
 
-@SpringBootApplication(scanBasePackages={"com.example.model"})
+@SpringBootApplication(scanBasePackages={"com.example.*"})
 public class CustomerApplication {
 
 	public static void main(String[] args) {
