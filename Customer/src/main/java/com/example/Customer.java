@@ -1,7 +1,10 @@
 package com.example;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
+import org.springframework.stereotype.Component;
 
 
 /**
@@ -10,6 +13,7 @@ import javax.persistence.*;
  */
 @Entity
 @NamedQuery(name="Customer.findAll", query="SELECT c FROM Customer c")
+@Component
 public class Customer implements Serializable {
 	private static final long serialVersionUID = 1L;
 
