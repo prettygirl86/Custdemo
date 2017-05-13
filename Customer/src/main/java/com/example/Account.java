@@ -20,12 +20,9 @@ public class Account implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="ACC_TYPE_ID")
-	private String accTypeId;
+	private String acctypid;
 
-	@Column(name="ACC_TYPE_NAME")
-	private String accTypeName;
+	private String acctype;
 
 	//bi-directional many-to-one association to Customer
 	@OneToMany(mappedBy="account")
@@ -34,20 +31,20 @@ public class Account implements Serializable {
 	public Account() {
 	}
 
-	public String getAccTypeId() {
-		return this.accTypeId;
+	public String getAcctypid() {
+		return this.acctypid;
 	}
 
-	public void setAccTypeId(String accTypeId) {
-		this.accTypeId = accTypeId;
+	public void setAcctypid(String acctypid) {
+		this.acctypid = acctypid;
 	}
 
-	public String getAccTypeName() {
-		return this.accTypeName;
+	public String getAcctype() {
+		return this.acctype;
 	}
 
-	public void setAccTypeName(String accTypeName) {
-		this.accTypeName = accTypeName;
+	public void setAcctype(String acctype) {
+		this.acctype = acctype;
 	}
 
 	public List<Customer> getCustomers() {

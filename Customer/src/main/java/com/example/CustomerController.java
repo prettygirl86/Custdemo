@@ -34,8 +34,8 @@ public class CustomerController {
 		customer.setCid("4");
 		customer.setName("Rakhi");
 		customer.setRole("Doctor");
-		account.setAccTypeId("4");
-		account.setAccTypeName("Loan");
+		account.setAcctypid("4");
+		account.setAcctype("Loan");
 		customer.setAccount(account);
 		customerrepository.save(customer);
 		for (Customer cust : customerrepository.findAll()) {
