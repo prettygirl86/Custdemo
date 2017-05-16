@@ -44,10 +44,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.oracle</groupId> -->
+<!-- 			<artifactId>ojdbc7</artifactId> -->
+<!-- 			<version>12.1.0</version> -->
+<!-- 		</dependency> -->
 		<dependency>
 			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc7</artifactId>
-			<version>12.1.0</version>
+			<artifactId>ojdbc14</artifactId>
+			<version>10.2.0.5</version>
 		</dependency>
 
 	</dependencies>
